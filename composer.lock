@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "adc70c4c3960f71cc08d35911eb1d2ef",
     "packages": [
         {
@@ -62,11 +61,6 @@
             "time": "2017-01-19T08:19:49+00:00"
         },
         {
-=======
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
-    "packages": [
-        {
->>>>>>> c39a16ac38cc9b5405c50dee2f1959debc83fa36
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
             "source": {
@@ -566,7 +560,6 @@
             "time": "2017-02-09T11:33:58+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "maximebf/debugbar",
             "version": "1.13.1",
             "source": {
@@ -628,8 +621,6 @@
             "time": "2017-01-05T08:46:19+00:00"
         },
         {
-=======
->>>>>>> c39a16ac38cc9b5405c50dee2f1959debc83fa36
             "name": "monolog/monolog",
             "version": "1.22.0",
             "source": {
@@ -1106,7 +1097,6 @@
             "time": "2016-11-22T19:21:44+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "rap2hpoutre/laravel-log-viewer",
             "version": "v0.8.0",
             "source": {
@@ -1155,8 +1145,6 @@
             "time": "2016-12-15T16:14:38+00:00"
         },
         {
-=======
->>>>>>> c39a16ac38cc9b5405c50dee2f1959debc83fa36
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.6",
             "source": {

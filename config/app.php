@@ -176,11 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-<<<<<<< HEAD
         Barryvdh\Debugbar\ServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class
-=======
->>>>>>> c39a16ac38cc9b5405c50dee2f1959debc83fa36
 
     ],
 
@@ -230,12 +227,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-<<<<<<< HEAD
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
     
-=======
-
->>>>>>> c39a16ac38cc9b5405c50dee2f1959debc83fa36
     ],
 
 ];
