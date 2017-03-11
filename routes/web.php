@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 /**
 *  Book related routes
 */
@@ -31,3 +32,8 @@ Route::any('/practice/{n?}', 'PracticeController@index');
 *  Main home page visitors see when they visit just /
 */
 Route::get('/', 'WelcomeController');
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> c39a16ac38cc9b5405c50dee2f1959debc83fa36
