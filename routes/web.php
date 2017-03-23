@@ -30,4 +30,4 @@ Route::get('/', 'WelcomeController@show');
 /**
 *  Passsword generator page /pswdgen
 */
-Route::get('/pswdgen', 'pswdgenController@show');
+Route::get('/pswdgen', 'pswdGenController@show');
