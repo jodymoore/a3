@@ -24,7 +24,7 @@ Route::any('/practice/{n?}', 'PracticeController@index');
 /**
 *  Main home page visitors see when they visit just /
 */
-Route::get('/', 'welcomeController@show');
+Route::get('/', 'WelcomeController@show');
 
 
 /**
