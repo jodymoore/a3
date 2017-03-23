@@ -1,0 +1,120 @@
+ body {
+    background-color: white;
+ }
+
+#container {
+    background-image: url(../public/images/grey3.png);
+    border: 35px solid transparent;
+    width: 55%;
+    height: 775px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+#inner {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 97%;
+    height: 725px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    display: inline-block;
+}
+img {
+    width: 25%;
+    height: 25%;
+    margin-left: 37%;
+}
+
+.alert, .btn {
+    margin-top: 3%;
+    margin-left:46%;
+}
+
+.alert{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+select{
+    width: 180px;
+    height: 25px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+#container #title h2 {
+    text-align: center;
+}
+
+#container #title h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#includeN {
+    margin-right: 10px;
+}
+
+#includeS {
+    margin-right: 10px;
+}
+
+em {
+    text-align: left;
+    font-size: 14px;
+    margin-right: 15%;
+    color: red;
+    padding-bottom: 20px;
+    margin-left: 42%;
+}
+
+label[for="numwords"] {
+    padding-top: 15px;
+    margin-right: 3%;
+    margin-left: 37%;
+}
+
+label[for="options"] {
+    padding-bottom: 0px;
+    margin-right: 2.9%;
+    margin-left: 42.5%;
+}
+
+select[name= 'options'] {
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
+label[for="includeN"] {
+    padding-top: 15px;
+    margin-right: 5%;
+    margin-left: 6%;
+}
+label[for="includeS"] {
+    padding-top: 15px;
+    margin-right: 4%;
+    margin-left: 46%;
+}
+
+footer {
+    text-align:center;
+    padding-top: 2%;
+}

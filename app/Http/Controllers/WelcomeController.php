@@ -13,4 +13,19 @@ class WelcomeController extends Controller
     public function __invoke() {
         return view('welcome');
     }
+
+    /*
+     *  get /books
+     */
+    public function index() {
+        return 'View all books...';
+    }
+
+    /*
+     *  Show
+     */
+    public function show($title = null) {
+
+    return view('show');
+  }
 }
