@@ -31,3 +31,8 @@ Route::get('/', 'WelcomeController@show');
 *  Passsword generator page /pswdgen
 */
 Route::get('/pswdgen', 'pswdGenController@show');
+
+/**
+*  GenPass /pswdgen
+*/
+Route::post('/pswdgen', 'pswdGenController@GenPass');

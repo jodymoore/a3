@@ -1,1 +1,3 @@
-footer.blade.php
+<footer>
+    &copy; {{ date('Y') }}
+</footer>

@@ -20,20 +20,74 @@ class pswdGenController extends Controller
      *  Show
      */
     public function show() {
-
-        return view('index');
+         $password = '';
+         $submitted = false;
+        return view('index',compact('password', 'submitted'));
     }
 
     /*
      *  Generate Password
      */
-    public function GenPass() {
+    public function GenPass(Request $request) {
+        $submitted = false;
 
         $this->validate(request(), [
 
-            'numwords' => 'required|numeric'
+            'numwords' => 'required'
 
         ]);
-    }
 
+        $numwords = $request->input('numwords'); 
+
+        $includeN = $request->has('includeN');
+
+        $includeS = $request->has('includeS');
+
+        $file = fopen("../resources/commonWordDic.txt", "r");
+
+        $password = '';
+
+        if ($file) {
+            $words = explode("\n", fread($file, filesize("../resources/commonWordDic.txt")));
+        }
+
+        for ($i=0; $i < $numwords; $i++) { 
+
+            $rand = rand(0,9914); 
+
+            $password = $password.$words[$rand];
+
+            $password = $password.'-'; 
+            
+        }
+
+        $password = substr($password,0,strlen($password)-1);
+
+        if ($includeN) {
+            $num = rand(0,10000);
+            $password = $password.$num;
+        }
+
+        $options ='';
+
+        if ($includeS) {
+                switch($request->input('options'))
+                {
+                    case "@": $options = "@"; break;
+                    case "#": $options = "#"; break;
+                    case "$": $options = "$"; break;
+                    case "%": $options = "%"; break;
+                    default: $options = "@"; break;
+                }
+                $password = $password.$options;
+            
+        }
+        else
+        {
+           $password = $password;
+        }
+
+        $submitted = true;
+        return view('result', compact('password', 'submitted'));
+    }
 }
