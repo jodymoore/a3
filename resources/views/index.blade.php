@@ -3,7 +3,7 @@
 @section('content')
 
 <div id="title"> 
-    <h1>Password Generator</h1>
+    <h1>xkcd Password Generator</h1>
     </div>
         <img
             src='/images/password_strength.png'

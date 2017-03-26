@@ -90,36 +90,36 @@ input {
 em {
     text-align: left;
     font-size: 14px;
-    margin-left: -61px;
+    margin-left: -86px;
     color: red;
     padding-bottom: 40px;
 }
 
-label[for="numwords"] {
+label[for="Number_of_Words"] {
     padding-top: 15px;
-    margin-right: 3%;
-    margin-left: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 label[for="options"] {
     padding-top: 10px;
-    margin-right: 20px;
-    margin-left: 86px;
+    margin-right: 5px;
+    margin-left: 65px;
 }
 
 select[name= 'options'] {
     margin-top: 10px;
-    margin-left: 224px;
+    margin-left: 237px;
 }
 
 label[for="includeN"] {
     padding-top: 15px;
-    margin-right: 5%;
+    margin-right: 3%;
     margin-left: 6%;
 }
 label[for="includeS"] {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: -17px;
     margin-left: 152px;
 }
 
