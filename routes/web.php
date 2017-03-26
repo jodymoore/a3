@@ -36,3 +36,8 @@ Route::get('/pswdgen', 'pswdGenController@show');
 *  GenPass /pswdgen
 */
 Route::post('/pswdgen', 'pswdGenController@GenPass');
+
+/**
+*  GenPass /pswdgen
+*/
+Route::post('/pswdgen/results', 'pswdGenController@show');

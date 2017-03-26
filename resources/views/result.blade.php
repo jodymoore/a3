@@ -5,10 +5,13 @@
 <div id="title"> 
     <h1>Password Generator</h1>
 </div>
-<?php if($submitted): ?>
+@if($submitted)
     <div class="alert alert-success">
         <strong>Your password:</strong><br>
         {{ $password }}                   
     </div>
-<?php endif; ?> 
+@endif
+
+<input type="button" name="Reset" onclick="window.location='{{ url("/pswdgen") }}'" value="Reset" class='btn btn-primary  btn-small'>
+
 @endsection

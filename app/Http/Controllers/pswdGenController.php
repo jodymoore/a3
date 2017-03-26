@@ -15,14 +15,14 @@ class pswdGenController extends Controller
     public function __invoke() {
         return view('welcome');
     }
-
+    
     /*
      *  Show
      */
-    public function show() {
-         $password = '';
-         $submitted = false;
-        return view('index',compact('password', 'submitted'));
+    public function show(Request $request) {
+
+        $numwords = $request->input('Number_of_Words'); 
+        return view('index',compact('numwords'));
     }
 
     /*
@@ -31,17 +31,17 @@ class pswdGenController extends Controller
     public function GenPass(Request $request) {
         $submitted = false;
 
-        $this->validate(request(), [
+        $this->validate($request, [
 
-            'numwords' => 'required'
+            'Number_of_Words' => 'required|numeric|between:0,25'
 
         ]);
 
-        $numwords = $request->input('numwords'); 
+        $numwords = $request->input('Number_of_Words'); 
 
-        $includeN = $request->has('includeN');
+        $includeN = $request->has('Include_a_number');
 
-        $includeS = $request->has('includeS');
+        $includeS = $request->has('Include_a_symbol');
 
         $file = fopen("../resources/commonWordDic.txt", "r");
 
@@ -54,33 +54,41 @@ class pswdGenController extends Controller
         for ($i=0; $i < $numwords; $i++) { 
 
             $rand = rand(0,9914); 
-
-            $password = $password.$words[$rand];
-
-            $password = $password.'-'; 
             
+            if (strlen($words[$rand]) > 2) {
+               $password = $password.$words[$rand];
+            }
+            
+            $password = $password.'-';        
         }
 
         $password = substr($password,0,strlen($password)-1);
 
         if ($includeN) {
+
             $num = rand(0,10000);
+
             $password = $password.$num;
+
         }
 
         $options ='';
 
         if ($includeS) {
+
                 switch($request->input('options'))
                 {
                     case "@": $options = "@"; break;
+
                     case "#": $options = "#"; break;
+
                     case "$": $options = "$"; break;
+
                     case "%": $options = "%"; break;
+
                     default: $options = "@"; break;
                 }
-                $password = $password.$options;
-            
+                $password = $password.$options;    
         }
         else
         {

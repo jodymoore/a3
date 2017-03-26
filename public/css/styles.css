@@ -1,6 +1,4 @@
- body {
-    background-color: black;
- }
+
 
 #container {
     /*background-image: url(/images/grey3.png);*/
@@ -24,6 +22,11 @@
     text-align:center;
     display: inline-block;
 }
+
+ body {
+    background-color: black;
+ }
+
 img {
     width: 60%;
     height: 40%;
@@ -39,13 +42,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    background-color: greenyellow;
-    color: black;
-    padding: 5px 0px 5px 0px;
-    font-size: 20px;
-    font-weight: 500;
-    border: 2px;
-    border-radius: 10px;
+    text-decoration: none;
 }
 
 select{
@@ -107,12 +104,12 @@ label[for="numwords"] {
 label[for="options"] {
     padding-top: 10px;
     margin-right: 20px;
-    margin-left: 102px;
+    margin-left: 86px;
 }
 
 select[name= 'options'] {
     margin-top: 10px;
-    margin-left: 240px;
+    margin-left: 224px;
 }
 
 label[for="includeN"] {
@@ -123,7 +120,7 @@ label[for="includeN"] {
 label[for="includeS"] {
     padding-top: 15px;
     margin-right: 20px;
-    margin-left: 163px;
+    margin-left: 152px;
 }
 
 footer {

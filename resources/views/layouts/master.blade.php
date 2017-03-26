@@ -8,6 +8,9 @@
     <meta charset='utf-8'>
     <link href="/css/styles.css" type='text/css' rel='stylesheet'>
 
+        <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     @stack('head')
 
 </head>
