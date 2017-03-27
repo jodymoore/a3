@@ -1,4 +1,3 @@
-
 @extends('layouts.master')
 
 @section('content')
@@ -6,8 +5,5 @@
 	<img src="/images/xkcd.png" alt="xkcd">
 	<h1>Password Generator</h1>
 </div>
-<a href="/pswdgen/">
-    <input id='enter' type="submit" name="Enter" value="Enter Site" class='btn btn-primary  btn-small'>
-</a>
-
+    <input id='enter' type="submit" onclick="window.location='{{ url("/pswdgen") }}'" name="Enter" value="Enter Site" class='btn btn-primary  btn-small'>
 @endsection

@@ -15,7 +15,7 @@ class pswdGenController extends Controller
     public function __invoke() {
         return view('welcome');
     }
-    
+
     /*
      *  Show
      */
@@ -69,7 +69,6 @@ class pswdGenController extends Controller
             $num = rand(0,10000);
 
             $password = $password.$num;
-
         }
 
         $options ='';

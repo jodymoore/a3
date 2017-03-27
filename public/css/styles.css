@@ -1,5 +1,7 @@
-
-
+/**
+* CSS file 
+* styles.css
+*/
 #container {
     /*background-image: url(/images/grey3.png);*/
     background-color: grey;
@@ -117,6 +119,7 @@ label[for="includeN"] {
     margin-right: 3%;
     margin-left: 6%;
 }
+
 label[for="includeS"] {
     padding-top: 15px;
     margin-right: -17px;

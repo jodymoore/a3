@@ -17,15 +17,9 @@ if(config('app.env') == 'local') {
 }
 
 /**
-*  Practice
-*/
-Route::any('/practice/{n?}', 'PracticeController@index');
-
-/**
 *  Main home page visitors see when they visit just /
 */
 Route::get('/', 'WelcomeController@show');
-
 
 /**
 *  Passsword generator page /pswdgen
@@ -37,7 +31,3 @@ Route::get('/pswdgen', 'pswdGenController@show');
 */
 Route::post('/pswdgen', 'pswdGenController@GenPass');
 
-/**
-*  GenPass /pswdgen
-*/
-Route::post('/pswdgen/results', 'pswdGenController@show');
