@@ -3,7 +3,7 @@
 
 @section('content')
 <div id="show">
-	<img src="/images/xkcd.png">
+	<img src="/images/xkcd.png" alt="xkcd">
 	<h1>Password Generator</h1>
 </div>
 <a href="/pswdgen/">
