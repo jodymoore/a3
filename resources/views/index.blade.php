@@ -15,7 +15,7 @@
 
             <div id ="form">
             <label for="Number_of_Words" ><strong>Number of Words</strong></label>
-            <input id="numwords" type="text" name="Number_of_Words" value="{{ old('Number_of_Words') }}"  required><br>
+            <input id="numwords" type="text" name="Number_of_Words" value="{{ sanitize(old('Number_of_Words')) }}"  required><br>
                 <em>* Required</em><br>
             <label for="options" ><strong>Options</strong></label>
             <input id="includeN"" type='checkbox' name="Include_a_number" >Include a number<br>
