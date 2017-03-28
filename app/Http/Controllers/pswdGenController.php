@@ -29,7 +29,6 @@ class pswdGenController extends Controller
      *  Generate Password
      */
     public function GenPass(Request $request) {
-        $submitted = false;
 
         $this->validate($request, [
 
@@ -43,36 +42,38 @@ class pswdGenController extends Controller
 
         $includeS = $request->has('Include_a_symbol');
 
+        // open common Word Dictionary file
         $file = fopen("../resources/commonWordDic.txt", "r");
 
         $password = '';
-
+        // read in file explode each word into array
         if ($file) {
             $words = explode("\n", fread($file, filesize("../resources/commonWordDic.txt")));
         }
-
+        // loop for number of words 
         for ($i=0; $i < $numwords; $i++) { 
-
+            // use rand to get random value
             $rand = rand(0,9914); 
-            
-            if (strlen($words[$rand]) > 2) {
-               $password = $password.$words[$rand];
+            // omit 2 letter words
+            if (strlen($words[$rand]) > 2) { 
+               // append random word from array to password variable         
+               $password = $password.$words[$rand];   
             }
-            
-            $password = $password.'-';        
+            // append hyphen to password
+            $password = $password.'-';                
         }
-
-        $password = substr($password,0,strlen($password)-1);
-
+        // strip last hyphen
+        $password = substr($password,0,strlen($password)-1); 
+        // condition for include a number
         if ($includeN) {
-
+            // assign random number to num variable
             $num = rand(0,10000);
-
+            // append number to password variable
             $password = $password.$num;
         }
 
         $options ='';
-
+        // condition for include a symbol
         if ($includeS) {
 
                 switch($request->input('options'))
@@ -94,7 +95,6 @@ class pswdGenController extends Controller
            $password = $password;
         }
 
-        $submitted = true;
-        return view('result', compact('password', 'submitted'));
+        return view('result', compact('password'));
     }
 }
