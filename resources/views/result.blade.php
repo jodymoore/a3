@@ -7,8 +7,8 @@
 </div>
 @if($submitted)
     <div class="alert alert-success">
-        <strong>Your password:</strong><br>
-        {{ $password }}                   
+        Your password:<br>
+       <h4><strong> {{ $password }} </strong></h4>                  
     </div>
 @endif
 
