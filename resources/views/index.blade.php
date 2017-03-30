@@ -34,8 +34,8 @@
             <option value="%">%</option>
         </select>           
         <br>
-        <input type="submit" name="Generate a password" value="Generate a password" class='btn btn-primary  btn-small'>
-        <input type="button" name="Reset" onclick="window.location='{{ url("/pswdgen") }}'" value="Reset" class='btn btn-primary  btn-small'>
+        <input id="genButton" type="submit" name="Generate a password" value="Generate a password" class='btn btn-primary  btn-small'>
+        <input id="resetButton" type="button" name="Reset" onclick="window.location='{{ url("/pswdgen") }}'" value="Reset" class='btn btn-primary  btn-small'>
     </div>
 </form>
 
