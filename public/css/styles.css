@@ -43,13 +43,31 @@
 
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
+        width: 80%;
         text-decoration: none;
+        font-size: 30px;
     }
 
-    select{
+    #results {
+        font-size: 30px;
+    }
+
+    #resultReset {
+        height:100px;
         width: 200px;
-        height: 35px;
+        font-size: 24px;
+    }
+
+    #enter {
+        height:100px;
+        width: 200px;
+        font-size: 24px;
+    }
+
+
+    select{
+        width: 225px;
+        height: 50px;
         margin-bottom: 5px;
         border: 1px solid black;
         border-radius: 5px;
@@ -96,13 +114,13 @@
     #genButton{
         height:100px;
         width: 300px;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #resetButton{
         height:100px;
         width: 200px;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     em {
@@ -116,7 +134,7 @@
     label[for="Number_of_Words"] {
         margin-top: 10px;
         padding-top: 15px;
-        margin-right: 5px;
+        margin-right: 10px;
         margin-left: 5px;
         font-size: 135%;
     }
@@ -124,14 +142,14 @@
     label[for="options"] {
         margin-top: 10px;
         padding-top: 10px;
-        margin-right: 5px;
+        margin-right: 10px;
         margin-left: 110px;
         font-size: 135%;
     }
 
     select[name= 'options'] {
         margin-top: 20px;
-        margin-left: 295px;
+        margin-left: 325px;
         margin-bottom: 20px;
     }
 
@@ -143,7 +161,7 @@
 
     label[for="includeS"] {
         padding-top: 25px;
-        margin-right: -17px;
+        margin-right: -11px;
         margin-left: 240px;
     }
 
@@ -304,7 +322,6 @@
     footer {
         text-align:center;
         padding-top: 2%;
-        font-size: 15px;
     }
 
  }
