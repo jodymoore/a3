@@ -1,0 +1,143 @@
+25c25
+<         font-size: 22px;
+---
+>         font-size: 20px;
+33,34c33,34
+<         width: 95%;
+<         height: 75%;
+---
+>         width: 80%;
+>         height: 60%;
+43c43
+<         margin-top: 150px;
+---
+> 
+46c46
+<         width: 80%;
+---
+>         width: 60%;
+48,58d47
+<         font-size: 30px;
+<     }
+< 
+<     #results {
+<         font-size: 30px;
+<     }
+< 
+<     #resultReset {
+<         height:100px;
+<         width: 200px;
+<         font-size: 24px;
+61,67d49
+<     #enter {
+<         height:100px;
+<         width: 200px;
+<         font-size: 24px;
+<     }
+< 
+< 
+69,70c51,52
+<         width: 225px;
+<         height: 50px;
+---
+>         width: 200px;
+>         height: 35px;
+88c70
+<         font-size: 65px;
+---
+>         font-size: 60px;
+115,117c97,99
+<         height:100px;
+<         width: 300px;
+<         font-size: 24px;
+---
+>         height:75px;
+>         width: 250px;
+>         font-size: 20px;
+121,123c103,105
+<         height:100px;
+<         width: 200px;
+<         font-size: 24px;
+---
+>         height:75px;
+>         width: 250px;
+>         font-size: 20px;
+128c110
+<         font-size: 25px;
+---
+>         font-size: 20px;
+130a113
+>         padding-bottom: 40px;
+134d116
+<         margin-top: 10px;
+136c118
+<         margin-right: 10px;
+---
+>         margin-right: 5px;
+138c120
+<         font-size: 135%;
+---
+>         font-size: 125%;
+142d123
+<         margin-top: 10px;
+144,146c125,127
+<         margin-right: 10px;
+<         margin-left: 110px;
+<         font-size: 135%;
+---
+>         margin-right: 5px;
+>         margin-left: 85px;
+>         font-size: 125%;
+150,152c131,132
+<         margin-top: 20px;
+<         margin-left: 325px;
+<         margin-bottom: 20px;
+---
+>         margin-top: 10px;
+>         margin-left: 237px;
+162,164c142,144
+<         padding-top: 25px;
+<         margin-right: -11px;
+<         margin-left: 240px;
+---
+>         padding-top: 15px;
+>         margin-right: -17px;
+>         margin-left: 197px;
+170,172d149
+<         font-size:22px;
+<         margin: 700px 0px 0px 450px;
+<         position: fixed;
+252c229
+<         height:30px;
+---
+>         height:25px;
+254c231
+<         font-size: 12px;     
+---
+>         font-size: 12px;
+258c235
+<         height:30px;
+---
+>         height:25px;
+263,272d239
+<     #results {
+<         font-size: 18px;
+<     }
+< 
+<     #resultReset {
+<         height:50px;
+<         width: 100px;
+<         font-size: 18px;
+<     }
+< 
+303d269
+<         margin-top: 0px;
+311d276
+<         margin-top: 0px;
+321d285
+<         margin-bottom: 0px;
+341c305
+<  }
+\ No newline at end of file
+---
+>  }
