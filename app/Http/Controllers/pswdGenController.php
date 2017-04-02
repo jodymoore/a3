@@ -54,15 +54,15 @@ class pswdGenController extends Controller
         for ($i=0; $i < $numwords; $i++) { 
             // use rand to get random value
             $rand = rand(0,9914); 
-            // omit 2 letter words
-            if (strlen($words[$rand]) > 2) { 
-               // append random word from array to password variable         
-               $password = $password.$words[$rand];   
-            }
-            // append hyphen to password
+
+            // append random word from array to password variable         
+            $password = $password.$words[$rand];   
+
+            //append hyphen to password
             $password = $password.'-';                
         }
         // strip last hyphen
+        //dump($password);
         $password = substr($password,0,strlen($password)-1); 
         // condition for include a number
         if ($includeN) {
