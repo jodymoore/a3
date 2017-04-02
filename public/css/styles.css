@@ -22,7 +22,7 @@
     }
 
     #form {
-        font-size: 20px;
+        font-size: 22px;
     }
 
      body {
@@ -30,8 +30,8 @@
      }
 
     img {
-        width: 80%;
-        height: 60%;
+        width: 95%;
+        height: 75%;
         padding-bottom: 3%;
     }
 
@@ -67,7 +67,7 @@
     }
 
     #container #title h1 {
-        font-size: 60px;
+        font-size: 65px;
         text-align: center;
         font-weight: bold;
     }
@@ -94,42 +94,45 @@
     }
 
     #genButton{
-        height:75px;
-        width: 250px;
+        height:100px;
+        width: 300px;
         font-size: 20px;
     }
 
     #resetButton{
-        height:75px;
-        width: 250px;
+        height:100px;
+        width: 200px;
         font-size: 20px;
     }
 
     em {
         text-align: left;
-        font-size: 20px;
+        font-size: 25px;
         margin-left: -120px;
         color: red;
         padding-bottom: 40px;
     }
 
     label[for="Number_of_Words"] {
+        margin-top: 10px;
         padding-top: 15px;
         margin-right: 5px;
         margin-left: 5px;
-        font-size: 125%;
+        font-size: 135%;
     }
 
     label[for="options"] {
+        margin-top: 10px;
         padding-top: 10px;
         margin-right: 5px;
-        margin-left: 85px;
-        font-size: 125%;
+        margin-left: 110px;
+        font-size: 135%;
     }
 
     select[name= 'options'] {
-        margin-top: 10px;
-        margin-left: 237px;
+        margin-top: 20px;
+        margin-left: 295px;
+        margin-bottom: 20px;
     }
 
     label[for="includeN"] {
@@ -139,14 +142,15 @@
     }
 
     label[for="includeS"] {
-        padding-top: 15px;
+        padding-top: 25px;
         margin-right: -17px;
-        margin-left: 197px;
+        margin-left: 240px;
     }
 
     footer {
         text-align:center;
         padding-top: 2%;
+        font-size:22px;
     }
 
  }
@@ -226,13 +230,13 @@
     }
 
     #genButton{
-        height:25px;
+        height:30px;
         width: 200px;
-        font-size: 12px;
+        font-size: 12px;     
     }
 
     #resetButton{
-        height:25px;
+        height:30px;
         width: 100px;
         font-size: 12px;
     }
