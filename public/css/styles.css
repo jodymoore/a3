@@ -45,17 +45,17 @@
         margin-right: auto;
         width: 80%;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 50px;
     }
 
     #results {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     #resultReset {
-        height:100px;
-        width: 200px;
-        font-size: 24px;
+        height:125px;
+        width: 225px;
+        font-size: 30px;
     }
 
     #enter {
