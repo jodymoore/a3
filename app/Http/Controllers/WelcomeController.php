@@ -15,16 +15,9 @@ class WelcomeController extends Controller
     }
 
     /*
-     *  get /books
-     */
-    public function index() {
-        return 'View all books...';
-    }
-
-    /*
      *  Show
      */
-    public function show($title = null) {
+    public function show() {
 
     return view('show');
   }
