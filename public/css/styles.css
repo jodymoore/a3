@@ -22,7 +22,7 @@
     }
 
     #form {
-        font-size: 25px;
+        font-size: 28px;
     }
 
      body {
@@ -110,20 +110,20 @@
     }
 
     #genButton{
-        height:100px;
-        width: 300px;
-        font-size: 24px;
+        height:110px;
+        width: 310px;
+        font-size: 28px;
     }
 
     #resetButton{
-        height:100px;
-        width: 200px;
-        font-size: 24px;
+        height:110px;
+        width: 210px;
+        font-size: 28px;
     }
 
     em {
         text-align: left;
-        font-size: 25px;
+        font-size: 28px;
         margin-left: -120px;
         color: red;
     }
@@ -133,7 +133,7 @@
         padding-top: 15px;
         margin-right: 10px;
         margin-left: 5px;
-        font-size: 145%;
+        font-size: 155%;
     }
 
     label[for="options"] {
@@ -141,7 +141,7 @@
         padding-top: 10px;
         margin-right: 10px;
         margin-left: 125px;
-        font-size: 145%;
+        font-size: 155%;
     }
 
     select[name= 'options'] {
@@ -159,7 +159,7 @@
     label[for="includeS"] {
         padding-top: 25px;
         margin-right: -11px;
-        margin-left: 280px;
+        margin-left: 300px;
     }
 
     footer {
@@ -213,7 +213,7 @@
     }
 
     .alert{
-        margin-top: 150px;
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
@@ -266,6 +266,12 @@
         height:50px;
         width: 100px;
         font-size: 18px;
+    }
+
+    #enter {
+        height:50px;
+        width: 100px;
+        font-size: 16px;
     }
 
     label {

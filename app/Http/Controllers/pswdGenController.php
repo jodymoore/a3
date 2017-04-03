@@ -30,7 +30,7 @@ class pswdGenController extends Controller
      */
     public function GenPass(Request $request) {
 
-        $this->validate($request, [
+        $errors = $this->validate($request, [
 
             'Number_of_Words' => 'required|numeric|between:0,25'
 
@@ -95,6 +95,11 @@ class pswdGenController extends Controller
            $password = $password;
         }
 
-        return view('result', compact('password'));
+        return view('result')->with([
+
+          'password' => $password,
+          'errors' => $errors
+
+        ]);
     }
 }
