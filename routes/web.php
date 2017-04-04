@@ -19,7 +19,7 @@ if(config('app.env') == 'local') {
 /**
 *  Main home page visitors see when they visit just /
 */
-Route::get('/', 'WelcomeController@show');
+Route::get('/', 'pswdGenController@show');
 
 /**
 *  Passsword generator page /pswdgen
