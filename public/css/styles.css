@@ -3,7 +3,9 @@
 * styles.css
 */
 
-
+/**
+*  small devices (Phones)
+*/
 @media (min-width: 320px) { 
     #container{
        width:100%;
@@ -203,6 +205,9 @@
 
  }
 
+/**
+*  Large devices (Desktops)
+*/
 @media (min-width: 1200px) { 
      #container {
         background-color: grey;
