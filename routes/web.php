@@ -22,7 +22,7 @@ if(config('app.env') == 'local') {
 Route::get('/', 'pswdGenController@show');
 
 /**
-*  Passsword generator page /pswdgen
+*  /pswdgen
 */
 Route::get('/pswdgen', 'pswdGenController@show');
 
@@ -30,4 +30,14 @@ Route::get('/pswdgen', 'pswdGenController@show');
 *  GenPass /pswdgen
 */
 Route::post('/pswdgen', 'pswdGenController@GenPass');
+
+/**
+*  Random Passsword generator page /randGen
+*/
+Route::get('/RGen', 'randGenController@show');
+
+/**
+*  GenPass /RGen
+*/
+Route::post('/RGen', 'randGenController@GenPass');
 

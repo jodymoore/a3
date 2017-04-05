@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        @yield('title', 'xkcd Password Generator')
-    </title>
 
     <meta charset='utf-8'>
     <link href="/css/styles.css" type='text/css' rel='stylesheet'>

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-require('../resources/tools.php');
 
 class pswdGenController extends Controller
 {
@@ -32,7 +31,7 @@ class pswdGenController extends Controller
 
         $errors = $this->validate($request, [
 
-            'Number_of_Words' => 'required|numeric|between:0,25'
+            'Number_of_Words' => 'required|numeric|between:0,50'
 
         ]);
 
