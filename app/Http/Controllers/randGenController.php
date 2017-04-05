@@ -21,7 +21,7 @@ class randGenController extends Controller
 
         $errors = $this->validate($request, [
 
-            'Number_of_Digits' => 'required|numeric|between:0,50'
+            'Number_of_Digits' => 'required|numeric|between:0,40'
 
         ]);
 
