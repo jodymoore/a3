@@ -14,8 +14,8 @@
     {{ csrf_field() }}
 
     <div id ="form">
-        <label for="Number_of_Words" ><strong>Number of Words</strong></label>
-        <input id="numwords" type="text" name="Number_of_Words" value="{{ old('Number_of_Words',20) }}" required><br>
+        <label for="Number_of_Digits" ><strong>Number of Digits</strong></label>
+        <input id="numDigits" type="text" name="Number_of_Digits" value="{{ old('Number_of_Digits',20) }}" required><br>
             <em>* Required</em><br>
             @if(count($errors) > 0)
             <div class="alert alert-danger">
