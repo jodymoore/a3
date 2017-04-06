@@ -9,10 +9,11 @@ class pswdGenController extends Controller
 {
 
     /*
-     *  Get welcome view
+     *  about
      */
-    public function __invoke() {
-        return view('welcome');
+    public function about() {
+
+        return view('about');
     }
 
     /*
@@ -20,8 +21,7 @@ class pswdGenController extends Controller
      */
     public function show(Request $request) {
 
-        $numwords = $request->input('Number_of_Words'); 
-        return view('index',compact('numwords'));
+        return view('index');
     }
 
     /*

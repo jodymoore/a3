@@ -27,6 +27,11 @@ Route::get('/', 'pswdGenController@show');
 Route::get('/pswdgen', 'pswdGenController@show');
 
 /**
+*  /pswdgen
+*/
+Route::get('/about', 'pswdGenController@about');
+
+/**
 *  GenPass /pswdgen
 */
 Route::post('/pswdgen', 'pswdGenController@GenPass');
