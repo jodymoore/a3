@@ -4,6 +4,7 @@
 
 @include('header')
 
+@if ()
 <div class="alert alert-success">
     Your password:<br>
     <h4 id="results"><strong> {{ $password }} </strong></h4>                  

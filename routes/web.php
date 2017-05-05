@@ -27,7 +27,7 @@ Route::get('/', 'pswdGenController@show');
 Route::get('/pswdgen', 'pswdGenController@show');
 
 /**
-*  /pswdgen
+*  /about
 */
 Route::get('/about', 'pswdGenController@about');
 
